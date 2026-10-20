@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int d1, c1, d2, c2, total, dollars, cents;
+
+    scanf("%d%d%d%d", &d1, &c1, &d2, &c2);
+
+    total = (d1 * 100 + c1) + (d2 * 100 + c2);
+
+    dollars = total / 100;
+    cents = total % 100;
+
+    printf("%d\n%d", dollars, cents);
+
+    return 0;
+}
